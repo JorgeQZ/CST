@@ -14,6 +14,10 @@ header {
   display: none;
 }
 
+.contenedor-general-biseccion img.gl {
+  display: block;
+}
+
 .contenedor-general-biseccion .contenedor-principal {
   position: absolute;
   top: 70px;

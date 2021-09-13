@@ -6,6 +6,7 @@
   <title>CST Software</title>
   <link rel="stylesheet" href="css/generals.css">
   <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/modulos.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -81,6 +82,156 @@
     </div>
   </div>
 
+
+  <div class="contenedor-general-modulos">
+    <div class="wrapper-modulos">
+
+      <div class="contenedor-bullets owl-carousel owl-theme">
+        <div class="contenedor-bullet active">
+          <p>Desarrollo de SW</p>
+        </div>
+        <div class="contenedor-bullet">
+          <p>Consultoría de IT</p>
+        </div>
+        <div class="contenedor-bullet">
+          <p>Pruebas de Software</p>
+        </div>
+        <div class="contenedor-bullet">
+          <p>Servicio de HeadHunter</p>
+        </div>
+      </div>
+
+    <div class="cont-general-modulos">
+
+      <div class="contenedor-modulos owl-carousel owl-theme">
+
+        <div class="contenedor-item">
+          <div class="cont-imagen">
+            <img src="img/desarrollosw.png" alt="">
+          </div>
+          <div class="cont-pregunta">
+            <p>
+              <u>Soporte y mantenimiento de aplicaciones (AMS)</u>
+            </p>
+            <p>
+              • Asignación de recursos, de acuerdo al perfil que se requiera <br>
+              • Servicio de Calidad con tarifas competitivas <br>
+              • Generación de un «core team» por tecnología y/o aplicativo
+            </p>
+            <br><br>
+            <p>
+              <u>Desarrollo de Aplicaciones</u>
+            </p>
+            <p>
+              • Soluciones en sitio/nearshore que se adaptan a las necesidades del cliente
+            </p>
+          </div>
+        </div>
+
+        <div class="contenedor-item">
+          <div class="cont-imagen">
+            <img src="img/consultoria.png" alt="">
+          </div>
+          <div class="cont-pregunta">
+            <p>
+              <u>Apoyo para la evaluación de ERP’s</u>
+            </p>
+            <p>
+              • Revisión de requerimientos <br>
+              • Generación de RFP para proveedores <br>
+              • Evaluación de propuestas <br>
+              • Seguimiento en la implementación  
+            </p>
+            <p>
+              <u>Asesoría en desarrollo de proyectos</u>
+            </p>
+            <p>
+              • Levantamiento de requerimientos de las necesidades <br>
+              • Recomendaciones de estrategia a implementar <br>
+              • Negociaciones con proveedores <br>
+              • Coordinación de actividades
+            </p>
+          </div>
+        </div>
+
+        <div class="contenedor-item">
+          <div class="cont-imagen">
+            <img src="img/pruebassoft.png" alt="">
+          </div>
+          <div class="cont-pregunta">
+            <p>
+              <u>Servicios</u>
+            </p>
+            <p>
+              • Definición e Implementación de Metodologías de Pruebas <br>
+              • Administración de Proyectos de Prueba <br>
+              • Pruebas de Aplicaciones <br>
+              • Instalación e Implementación de Herramientas de Automatización <br>
+              • Automatización de Pruebas
+            </p>
+            <p>
+              <u>Herramientas Automatizadas:</u>
+            </p>
+            <p>
+              • HP ALM  <br>
+              • Rational Robot <br>
+              • Compuware <br>
+              • Open Source (Jmeter, Junit, Jtests, OpenSTA, etc)
+            </p>
+          </div>
+        </div>
+
+        <div class="contenedor-item">
+          <div class="cont-imagen">
+            <img src="img/headhunter.png" alt="">
+          </div>
+          <div class="cont-pregunta">
+            <p>
+              Ofrecemos un servicio de reclutamiento eficiente y a un costo atractivo para nuestros clientes. 
+              Especializado en el área de IT. Manejamos un modelo reclutamietno “ad-hoc” a las necesidades de nuestros clientes.
+            </p>
+            <p>
+              Nuestro Proceso:
+            </p>
+            <ul>
+              <li><u>• Busqueda de Candidatos</u></li>
+              <ul>
+                <li>- Base de Datos comerciales e Interna</li>
+                <li>- Redes Sociales LinkedIn, propias (aliados, clientes, contactos, etc)</li>      
+              </ul>
+            </ul>
+            <ul>
+              <li><u>• Entrevistas</u></li>
+              <ul>
+                <li>- Validación de perfil (Cleaver test)</li>
+                <li>- Validación técnica</li>
+              </ul>
+            </ul>
+            <ul>
+              <li><u>• Selección de Candidatos</u></li>
+              <ul>
+                <li>- Envío de Candidatos</li>
+                <li>- Programación de entrevistas con el cliente</li>      
+                <li>- Aceptación del cliente</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="bg bg1 active"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="bg bg4"></div>
+
+
+  </div>
+</div>
+
+
   <footer>
     <div class="column">
       <a href="" class="footer_logo">
@@ -127,5 +278,106 @@
     });
 
 </script>
+
+
+<script>
+  $('.contenedor-bullets').owlCarousel({
+      loop: false,
+      margin: 0,
+      dots: false,
+      nav: true,
+      navText: ["<img src='img/f-izq.png'>","<img src='img/f-der.png'>"],
+      margin: 20,
+      responsive: {
+          0: {
+              items: 1,
+          },
+          768: {
+              items: 2,
+          },
+          1024: {
+              items: 4,
+          }
+      },
+  });
+  
+  $('.contenedor-modulos').owlCarousel({
+      loop: false,
+      margin: 0,
+      dots: true,
+      items: 1,
+      navText: ["<img src='img/f-izq.png'>","<img src='img/f-der.png'>"],
+      responsive: {
+          0: {
+              nav: false,
+          },
+          768: {
+              nav: true,
+          },
+          1024: {
+              nav: true,
+          }
+      },
+  });
+  
+  var sliderBullets = $('.contenedor-bullets');
+  sliderBullets.on('changed.owl.carousel', function(e) {
+      var indice = e.item.index;
+      if ($(window).width() <= 767) {
+          $(".contenedor-general-modulos .contenedor-bullets .owl-stage-outer .owl-stage .owl-item").each(function(index) {
+              if (index == indice) {
+                  $(this).children().children().click();
+                  //$('.contenedor-modulos').trigger('to.owl.carousel', indice);
+              }
+          });
+      }
+  });
+  
+  
+  var sliderModulos = $('.contenedor-modulos');
+  sliderModulos.on('changed.owl.carousel', function(e) {
+      var indice = e.item.index;
+  
+      if ($(window).width() >= 320 && $(window).width() <= 767) {
+          caca = indice;
+          $('.contenedor-bullets').trigger('to.owl.carousel', caca);
+      }
+      if ($(window).width() >= 768 && $(window).width() <= 1023) {
+          caca = indice - 1;
+          $('.contenedor-bullets').trigger('to.owl.carousel', caca);
+      }
+      if ($(window).width() >= 1024) {
+          caca = indice - 3;
+          $('.contenedor-bullets').trigger('to.owl.carousel', caca);
+      }
+  
+      $(".contenedor-general-modulos .contenedor-bullets .contenedor-bullet.active").removeClass("active");
+      $(".contenedor-general-modulos .contenedor-bullets .owl-stage-outer .owl-stage .owl-item").each(function(index) {
+          if (index == indice) {
+              $(this).children().addClass("active");
+          }
+      });
+
+      $(".contenedor-general-modulos .wrapper-modulos .bg.active").removeClass("active");
+      $(".contenedor-general-modulos .wrapper-modulos .bg").each(function(index) {
+          if (index == indice) {
+              $(this).addClass("active");
+          }
+      });
+  });
+  
+  
+  $(document).ready(function() {
+  
+      $(".contenedor-general-modulos .contenedor-bullets .contenedor-bullet p").on('click', function() {
+          $(".contenedor-general-modulos .contenedor-bullets .contenedor-bullet.active").removeClass("active");
+          $(this).parent().addClass("active");
+          var ind = $(this).parent().parent().index();
+          $('.contenedor-modulos').trigger('to.owl.carousel', ind);
+      });
+  
+  });
+  </script>
+  
 
 </html>
