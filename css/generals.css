@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Avenir-Roman';
+  src: url("../fonts/Avenir-Roman.eot");
+  src: url("../fonts/Avenir-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Roman.woff2") format("woff2"), url("../fonts/Avenir-Roman.woff") format("woff"), url("../fonts/Avenir-Roman.ttf") format("truetype"), url("../fonts/Avenir-Roman.svg#Avenir-Roman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Avenir-Roman', avenir;
+}
+
+footer {
+  background-color: #093761;
+  padding: 30px 70px;
+  min-height: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+footer .column {
+  padding: 10px;
+}
+
+footer .column:first-child {
+  width: 20%;
+  margin-right: 10%;
+  border-right: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer .column:last-child {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .column .footer_logo img {
+  max-width: 130px;
+  width: 100%;
+  height: auto;
+}
+
+footer .column .sub_column p {
+  color: #ebebeb;
+}
+
+footer .column .sub_column p.icon {
+  padding-left: 30px;
+  position: relative;
+}
+
+footer .column .sub_column p.icon:before {
+  width: 18px;
+  height: 18px;
+  content: '';
+  top: 0;
+  left: -20px;
+  position: absolute;
+  background-size: contain;
+}
+
+footer .column .sub_column p.icon_phone:before {
+  background-image: url(../img/icon-phone-call.png);
+}

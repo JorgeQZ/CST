@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Avenir-Roman';
+    src: url("../fonts/Avenir-Roman.eot");
+    src: url("../fonts/Avenir-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Roman.woff2") format("woff2"), url("../fonts/Avenir-Roman.woff") format("woff"), url("../fonts/Avenir-Roman.ttf") format("truetype"), url("../fonts/Avenir-Roman.svg#Avenir-Roman") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Avenir-Roman', avenir;
+}
+
+footer {
+    background-color: #093761;
+    padding: 30px 70px;
+    min-height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    .column {
+        padding: 10px;
+
+        &:first-child {
+            width: 20%;
+            margin-right: 10%;
+            border-right: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        &:last-child {
+            width: 70%;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+
+        .footer_logo {
+            img {
+                max-width: 130px;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .sub_column {
+            p {
+                color: #ebebeb;
+
+                &.icon {
+                    padding-left: 30px;
+                    position: relative;
+
+                    &:before {
+                        width: 18px;
+                        height: 18px;
+                        content: '';
+                        top: 0;
+                        left: -20px;
+                        position: absolute;
+                        background-size: contain;
+                    }
+
+                    &_phone {
+                        &:before {
+                            background-image: url(../img/icon-phone-call.png);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
