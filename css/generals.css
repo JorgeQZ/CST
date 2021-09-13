@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Avenir-Roman';
   src: url("../fonts/Avenir-Roman.eot");
@@ -21,6 +22,7 @@ html, body {
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 30px 70px;
 }
 
 header {
@@ -166,4 +168,65 @@ footer .column .sub_column p.icon_phone:before {
 
 footer .column .sub_column p.icon_mail:before {
   background-image: url(../img/icon-email.png);
+}
+
+.ct {
+  padding: 50px 70px;
+  overflow: hidden;
+}
+
+.ct_title {
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+  color: #b92e33;
+  font-size: 40px;
+  font-weight: bolder !important;
+  position: relative;
+}
+
+.ct_title:before {
+  content: "¿Cómo trabajamos?";
+  position: absolute;
+  left: 345px;
+  top: -30px;
+  color: #b92e33;
+  font-size: 80px;
+  -webkit-text-stroke: 1px rgba(185, 46, 51, 0.3);
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+}
+
+.ct_subtitle {
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+  font-weight: bolder !important;
+  color: #093761;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.ct_grid {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ct_grid_item {
+  width: 22%;
+  text-align: center;
+}
+
+.ct_grid_item img {
+  max-height: 90px;
+  margin: 0 auto;
+}
+
+.ct_grid_item p {
+  color: #093761;
+  line-height: 1;
 }
