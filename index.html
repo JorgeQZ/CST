@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CST Software</title>
   <link rel="stylesheet" href="css/generals.css">
-
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -22,6 +25,61 @@
       <a href="" class="item"><img src="" alt=""></a>
     </div>
   </header>
+
+  <div class="contenedor-general-biseccion">
+    <img class="md" src="img/aaa.jpg" alt="">
+    <img class="gl" src="img/aa.jpg" alt="">
+    <div class="contenedor-principal">
+      <div class="contenedor-slider owl-carousel owl-theme">
+        <div class="cont-slide">
+          <h2>Nuestros servicios han evolucionado 
+            para adecuarse a las necesidades modernas.
+          </h2>
+          <a href="#" target="_blank">Ver más</a>
+        </div>
+        <div class="cont-slide">
+          <h2>Nuestros servicios han evolucionado 
+            para adecuarse a las necesidades modernas.
+          </h2>
+          <a href="#" target="_blank">Ver más</a>
+        </div>
+        <div class="cont-slide">
+          <h2>Nuestros servicios han evolucionado 
+            para adecuarse a las necesidades modernas.
+          </h2>
+          <a href="#" target="_blank">Ver más</a>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor-somos">
+      <div class="cont-somos">
+        <div class="cont-info">
+          <h2>
+            ¿Quiénes somos?
+          </h2>
+          <p>
+            Un grupo de profesionistas que cuenta con más de 15 años de experiencia en la industria de IT. Enfocados a la consultoría y desarrollo de aplicaciones para sus clientes.
+          </p>
+          <ul>
+            <li>- Alianzas para la realización de proyectos:</li>
+            <ul>
+              <li>- Alveni</li>
+              <li>- In-Site</li>            
+            </ul>
+          </ul>
+          <ul>
+            <li>- Algunos de nuestros principales clientes:</li>
+            <ul>
+              <li>- Farmacias del Ahorro</li>
+              <li>- GNC</li>      
+              <li>- InverCap</li>
+              <li>- 7-Eleven</li>      
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <div class="column">
@@ -52,4 +110,22 @@
     </div>
   </footer>
 </body>
+
+<script src="js/owl.carousel.min.js"></script>
+
+<script>
+
+    $(".contenedor-slider").owlCarousel({
+        loop:false,
+        margin:0,
+        nav:false,
+        dots:true,
+        autoplayTimeout: 5000,
+        lazyLoad:true,
+        smartSpeed: 500,
+        items:1    
+    });
+
+</script>
+
 </html>
