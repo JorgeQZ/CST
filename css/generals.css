@@ -18,6 +18,73 @@ html, body {
   font-family: 'Avenir-Roman', avenir;
 }
 
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #093761;
+  padding: 30px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .brand_logo img {
+  height: auto;
+  max-width: 130px;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .menu li {
+  list-style: none;
+  padding: 5px 10px;
+  margin: 0 20px;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+header .menu li a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+header .menu li:hover {
+  background-color: white;
+}
+
+header .menu li:hover a {
+  color: #093761;
+}
+
+header .social .item {
+  margin: 0 8px;
+}
+
+header .social .item img {
+  width: 20px;
+  height: auto;
+}
+
+header .social .item:last-child img {
+  width: 16px;
+  padding-bottom: 1px;
+}
+
 footer {
   background-color: #093761;
   padding: 30px 70px;
@@ -67,7 +134,7 @@ footer .column:last-child {
 }
 
 footer .column .footer_logo img {
-  max-width: 130px;
+  max-width: 120px;
   width: 100%;
   height: auto;
 }
@@ -77,20 +144,26 @@ footer .column .sub_column p {
 }
 
 footer .column .sub_column p.icon {
-  padding-left: 30px;
+  padding-left: 18px;
   position: relative;
 }
 
 footer .column .sub_column p.icon:before {
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   content: '';
-  top: 0;
-  left: -20px;
+  top: 4px;
+  left: -1px;
   position: absolute;
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 footer .column .sub_column p.icon_phone:before {
   background-image: url(../img/icon-phone-call.png);
+}
+
+footer .column .sub_column p.icon_mail:before {
+  background-image: url(../img/icon-email.png);
 }
