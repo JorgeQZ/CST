@@ -634,7 +634,8 @@
     .sv_col_container .sv_col .sv_box_items,
     .sv_col_container .sv_col .sv_topics,
     .contenedor-general-modulos .wrapper-modulos,
-    footer .column
+    footer .column,
+    header .container
     {
         opacity: 0;
     }
@@ -657,7 +658,7 @@ jQuery(function($j) {
         offset: '75%',
         triggerOnce: true
     });
-    $j('footer .column').waypoint(function() {
+    $j('footer .column, header .container').waypoint(function() {
         $j(this).toggleClass('fadeIn animated');
     }, {
         offset: '100%',
