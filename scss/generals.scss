@@ -99,6 +99,7 @@ html, body {
             text-align: center;
             .item {
                 margin: 0 8px;
+                transition: all .3s;
 
                 img {
                     width: 20px;
@@ -110,6 +111,9 @@ html, body {
                         width: 16px;
                         padding-bottom: 1px;
                     }
+                }
+                &:hover{
+                    opacity: .5;
                 }
             }
         }
@@ -406,6 +410,9 @@ html, body {
                 margin: 10px;
                 width: calc(50% - 25px);
                 text-align: center;
+                position: relative;
+                top: 0;
+                transition: all .3s;
 
                 img {
                     max-height: 90px;
@@ -415,6 +422,9 @@ html, body {
                 p {
                     color: #093761;
                     line-height: 1;
+                }
+                &:hover{
+                    top: -15px;
                 }
             }
         }
@@ -475,6 +485,7 @@ html, body {
                 flex-wrap: wrap;
                 flex-direction: column;
                 margin: 5px;
+                transition: all .3s;
 
                 .col {
                     &:first-child {
@@ -515,6 +526,9 @@ html, body {
 
                 &:nth-child(5) {
                     background-color: #00a9c5;
+                }
+                &:hover{
+                    filter: opacity(.5);
                 }
             }
         }
@@ -746,6 +760,14 @@ html, body {
                             }
                         }
                     }
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        transition: all .3s;
+                        &:hover{
+                            opacity: .5;
+                        }
+                    }
                 }
             }
         }
@@ -793,7 +815,9 @@ html, body {
             &_item {
                 width: 22%;
                 text-align: center;
-
+                position: relative;
+                top: 0;
+                transition: all .3s;
                 img {
                     max-height: 90px;
                     margin: 0 auto;
@@ -802,6 +826,9 @@ html, body {
                 p {
                     color: #093761;
                     line-height: 1;
+                }
+                &:hover{
+                    top: -15px;
                 }
             }
         }
@@ -856,7 +883,9 @@ html, body {
                 height: auto;
                 border-radius: 15px;
                 display: flex;
-
+                position: relative;
+                top: 0;
+                transition: all .3s;
                 .col {
                     &:first-child {
                         width: 30%;
@@ -899,6 +928,10 @@ html, body {
                 &:nth-child(5) {
                     background-color: #00a9c5;
                 }
+                &:hover{
+                    top: -15px;
+                    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+                }                
             }
         }
     }
@@ -973,6 +1006,12 @@ html, body {
                                 margin: 10px 0;
                                 color: white;
                                 text-decoration: underline;
+                                position: relative;
+                                left: 0;
+                                transition: all .3s;
+                                &:hover{
+                                    left: 10px;
+                                }
                             }
                         }
                     }
@@ -1108,6 +1147,7 @@ html, body {
                 margin: 0 8px;
                 display: flex;
                 align-items: center;
+                transition: all .3s;
                 img {
                     width: 20px;
                     height: auto;
@@ -1118,6 +1158,9 @@ html, body {
                         width: 16px;
                         padding-bottom: 1px;
                     }
+                }
+                &:hover{
+                    opacity: .5;
                 }
             }
         }

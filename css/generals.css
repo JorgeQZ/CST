@@ -113,6 +113,8 @@ html, body {
   }
   header .social .item {
     margin: 0 8px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
   }
   header .social .item img {
     width: 20px;
@@ -121,6 +123,9 @@ html, body {
   header .social .item:last-child img {
     width: 16px;
     padding-bottom: 1px;
+  }
+  header .social .item:hover {
+    opacity: .5;
   }
   .sv {
     padding-top: 60px;
@@ -435,6 +440,10 @@ html, body {
     margin: 10px;
     width: calc(50% - 25px);
     text-align: center;
+    position: relative;
+    top: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
   }
   .ct_grid_item img {
     max-height: 90px;
@@ -443,6 +452,9 @@ html, body {
   .ct_grid_item p {
     color: #093761;
     line-height: 1;
+  }
+  .ct_grid_item:hover {
+    top: -15px;
   }
   .aux_bg {
     background-image: url(../img/ms_sv_bg.jpg);
@@ -509,6 +521,8 @@ html, body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 5px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
   }
   .ms_grid_item .col:first-child {
     text-align: center;
@@ -538,6 +552,10 @@ html, body {
   }
   .ms_grid_item:nth-child(5) {
     background-color: #00a9c5;
+  }
+  .ms_grid_item:hover {
+    -webkit-filter: opacity(0.5);
+            filter: opacity(0.5);
   }
   .sv {
     padding-top: 60px;
@@ -776,6 +794,15 @@ html, body {
   footer .column .sub_column p.icon_mail:before {
     background-image: url(../img/icon-email.png);
   }
+  footer .column .sub_column p a {
+    color: white;
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  footer .column .sub_column p a:hover {
+    opacity: .5;
+  }
   .ct {
     padding: 50px 70px;
     overflow: hidden;
@@ -820,6 +847,10 @@ html, body {
   .ct_grid_item {
     width: 22%;
     text-align: center;
+    position: relative;
+    top: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
   }
   .ct_grid_item img {
     max-height: 90px;
@@ -828,6 +859,9 @@ html, body {
   .ct_grid_item p {
     color: #093761;
     line-height: 1;
+  }
+  .ct_grid_item:hover {
+    top: -15px;
   }
   .aux_bg {
     background-image: url(../img/ms_sv_bg.jpg);
@@ -880,6 +914,10 @@ html, body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
+    top: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
   }
   .ms_grid_item .col:first-child {
     width: 30%;
@@ -912,6 +950,11 @@ html, body {
   }
   .ms_grid_item:nth-child(5) {
     background-color: #00a9c5;
+  }
+  .ms_grid_item:hover {
+    top: -15px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   }
   .sv {
     padding-top: 60px;
@@ -986,6 +1029,13 @@ html, body {
     margin: 10px 0;
     color: white;
     text-decoration: underline;
+    position: relative;
+    left: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .sv_col_container .sv_col .sv_box_items:last-child p:hover {
+    left: 10px;
   }
   .sv_col_container .sv_col .sv_topics {
     max-width: 570px;
@@ -1130,6 +1180,8 @@ html, body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-transition: all .3s;
+    transition: all .3s;
   }
   header .social .item img {
     width: 20px;
@@ -1138,6 +1190,9 @@ html, body {
   header .social .item:last-child img {
     width: 16px;
     padding-bottom: 1px;
+  }
+  header .social .item:hover {
+    opacity: .5;
   }
   header.scrolled {
     background: #093761;
