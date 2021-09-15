@@ -1124,6 +1124,24 @@ html, body {
     }
 }
 
+@media screen and (min-width: 1440px) {
+    .aux_bg {
+        background-position: center 60%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .aux_bg {
+        background-position: center 50%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .aux_bg {
+        background-position: center 25%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     header {
         position: fixed;
