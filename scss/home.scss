@@ -21,10 +21,14 @@
         height: 48%;
         display: flex;
         align-items: center;
-
+        right: 0;
+        max-width: 1280px;
+        margin: 0 auto;
         .contenedor-slider {
             width: 60%;
-            padding: 0 4%;
+            //padding: 0 4%;
+            //padding: 0 70px;
+            margin: 0;
             font-family: Helvetica;
             max-width: 800px;
 
@@ -96,10 +100,14 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-
+        right: 0;
+        max-width: 1280px;
+        margin: 0 auto;
         .cont-somos {
             width: 57%;
-            padding: 0 4%;
+            //padding: 0 4%;
+            //padding: 0 70px;
+            margin: 0;
             font-family: Helvetica;
             max-width: 800px;
 
@@ -182,6 +190,7 @@
 
 @media screen and (max-width: 767px) {
     .contenedor-general-biseccion {
+        padding-top: 89px;
         img {
             &.md {
                 display: none;

@@ -26,11 +26,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  right: 0;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .contenedor-general-biseccion .contenedor-principal .contenedor-slider {
   width: 60%;
-  padding: 0 4%;
+  margin: 0;
   font-family: Helvetica;
   max-width: 800px;
 }
@@ -103,11 +106,14 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  right: 0;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .contenedor-general-biseccion .contenedor-somos .cont-somos {
   width: 57%;
-  padding: 0 4%;
+  margin: 0;
   font-family: Helvetica;
   max-width: 800px;
 }
@@ -174,6 +180,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .contenedor-general-biseccion {
+    padding-top: 89px;
+  }
   .contenedor-general-biseccion img.md {
     display: none;
   }

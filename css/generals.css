@@ -27,6 +27,101 @@ html, body {
 
 /* Media 0 */
 @media screen and (max-width: 767px) {
+  header {
+    background-color: #093761;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .brand_logo img {
+    height: auto;
+    max-width: 80px;
+  }
+  header .cont-burguer .burguer {
+    width: 35px;
+    height: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  header .cont-burguer .burguer span {
+    width: 90%;
+    height: 2px;
+    margin: 4px 2px;
+    background-color: white;
+    -webkit-transition: -webkit-transform 400ms ease;
+    transition: -webkit-transform 400ms ease;
+    transition: transform 400ms ease;
+    transition: transform 400ms ease, -webkit-transform 400ms ease;
+  }
+  header .menu {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  header .menu li {
+    list-style: none;
+    padding: 2px 10px;
+    margin: 0 20px;
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+  }
+  header .menu li a {
+    color: white;
+    text-decoration: none;
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+  }
+  header .menu li:hover {
+    background-color: white;
+  }
+  header .menu li:hover a {
+    color: #093761;
+  }
+  header .social {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+  header .social .item {
+    margin: 0 8px;
+  }
+  header .social .item img {
+    width: 20px;
+    height: auto;
+  }
+  header .social .item:last-child img {
+    width: 16px;
+    padding-bottom: 1px;
+  }
   .sv {
     padding-top: 60px;
     padding-bottom: 130px;
@@ -205,46 +300,6 @@ html, body {
 @media screen and (max-width: 1279px) {
   .container {
     padding: 20px 30px;
-  }
-  header {
-    background-color: #093761;
-  }
-  header .brand_logo img {
-    height: auto;
-    max-width: 80px;
-  }
-  header .menu {
-    display: none;
-  }
-  header .menu li {
-    list-style: none;
-    padding: 5px 10px;
-    margin: 0 20px;
-    -webkit-transition: 300ms ease;
-    transition: 300ms ease;
-  }
-  header .menu li a {
-    color: white;
-    text-decoration: none;
-    -webkit-transition: 300ms ease;
-    transition: 300ms ease;
-  }
-  header .menu li:hover {
-    background-color: white;
-  }
-  header .menu li:hover a {
-    color: #093761;
-  }
-  header .social .item {
-    margin: 0 8px;
-  }
-  header .social .item img {
-    width: 20px;
-    height: auto;
-  }
-  header .social .item:last-child img {
-    width: 16px;
-    padding-bottom: 1px;
   }
   footer {
     background-color: #093761;
@@ -647,59 +702,6 @@ html, body {
 
 /* MEDIA 1280px */
 @media screen and (min-width: 1280px) {
-  header {
-    background-color: #093761;
-  }
-  header .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  header .brand_logo img {
-    height: auto;
-    max-width: 130px;
-  }
-  header .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  header .menu li {
-    list-style: none;
-    padding: 5px 10px;
-    margin: 0 20px;
-    -webkit-transition: 300ms ease;
-    transition: 300ms ease;
-  }
-  header .menu li a {
-    color: white;
-    text-decoration: none;
-    -webkit-transition: 300ms ease;
-    transition: 300ms ease;
-  }
-  header .menu li:hover {
-    background-color: white;
-  }
-  header .menu li:hover a {
-    color: #093761;
-  }
-  header .social .item {
-    margin: 0 8px;
-  }
-  header .social .item img {
-    width: 20px;
-    height: auto;
-  }
-  header .social .item:last-child img {
-    width: 16px;
-    padding-bottom: 1px;
-  }
   footer {
     background-color: #093761;
     min-height: 30px;
@@ -1057,5 +1059,89 @@ html, body {
     border-radius: 50% 0;
     -webkit-filter: blur(5px);
             filter: blur(5px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header .brand_logo img {
+    height: auto;
+    max-width: 95px;
+  }
+  header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .menu li {
+    list-style: none;
+    padding: 5px 10px;
+    margin: 0 20px;
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+  }
+  header .menu li a {
+    color: white;
+    text-decoration: none;
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+  }
+  header .menu li:hover {
+    background-color: white;
+  }
+  header .menu li:hover a {
+    color: #093761;
+  }
+  header .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .social .item {
+    margin: 0 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .social .item img {
+    width: 20px;
+    height: auto;
+  }
+  header .social .item:last-child img {
+    width: 16px;
+    padding-bottom: 1px;
+  }
+  header.scrolled {
+    background: #093761;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }

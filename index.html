@@ -17,24 +17,31 @@
   <header>
     <div class="container">
       <a class="brand_logo" href=""><img src="img/logo_white.png" alt=""></a>
+      <div class="cont-burguer">
+        <div class="burguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </div>
       <ul class="menu">
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Nosotros</a></li>
-        <li><a href="">Servicios</a></li>
-        <li><a href="">Contacto</a></li>
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Nosotros">Nosotros</a></li>
+        <li><a href="#Servicios">Servicios</a></li>
+        <li><a href="#Contacto">Contacto</a></li>
       </ul>
       <div class="social">
-        <a href="" class="item"><img src="img/icon-email.png" alt=""></a>
-        <a href="" class="item"><img src="img/icon-phone-call.png" alt=""></a>
+        <a href="#" class="item"><img src="img/icon-email.png" alt=""></a>
+        <a href="#" class="item"><img src="img/icon-phone-call.png" alt=""></a>
       </div>
     </div>
   </header>
 
-  <div class="contenedor-general-biseccion">
+  <div id="Inicio" class="contenedor-general-biseccion">
     <img class="md" src="img/aaa.jpg" alt="">
     <img class="gl" src="img/aa.jpg" alt="">
     <div class="contenedor-principal">
-      <div class="contenedor-slider owl-carousel owl-theme">
+      <div class="contenedor-slider container owl-carousel owl-theme">
         <div class="cont-slide">
           <h2>Nuestros servicios han evolucionado 
             para adecuarse a las necesidades modernas.
@@ -56,7 +63,7 @@
       </div>
     </div>
     <div class="contenedor-somos">
-      <div class="cont-somos">
+      <div class="cont-somos container">
         <div class="cont-info">
           <h2>
             ¿Quiénes somos?
@@ -86,7 +93,7 @@
   </div>
 
   <!-- Como trabajamos -->
-  <div class="container ct">
+  <div id="Nosotros" class="container ct">
     <div class="ct_title">
       ¿Cómo trabajamos?
     </div>
@@ -192,7 +199,7 @@
 
 
     <!-- Servicios -->
-    <div class="container">
+    <div id="Servicios" class="container">
       <div class="sv">
         <div class="sv_title">Servicios</div>
         <div class="sv_col_container">
@@ -265,7 +272,7 @@
   </div>
 
 
-  <div class="contenedor-general-modulos">
+  <div class="contenedor-general-modulos container">
     <div class="wrapper-modulos">
 
       <div class="contenedor-bullets owl-carousel owl-theme">
@@ -414,7 +421,7 @@
 </div>
 
 
-  <footer>
+  <footer id="Contacto">
     <div class="container">
       <div class="column">
         <a href="" class="footer_logo">
@@ -552,6 +559,11 @@
   
   
   $(document).ready(function() {
+
+        var scroll = $(window).scrollTop();
+        if(scroll >= 50){
+          $('header').addClass('scrolled');
+        }
   
       $(".contenedor-general-modulos .contenedor-bullets .contenedor-bullet p").on('click', function() {
           $(".contenedor-general-modulos .contenedor-bullets .contenedor-bullet.active").removeClass("active");
@@ -559,6 +571,48 @@
           var ind = $(this).parent().parent().index();
           $('.contenedor-modulos').trigger('to.owl.carousel', ind);
       });
+
+      var auxScroll_ = 0;
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 50) {
+                $('header').addClass('scrolled');
+            } else {
+                $('header').removeClass('scrolled');
+            }
+        });
+
+      $('.burguer').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('header .menu').slideToggle(500);
+        $('header .social').slideToggle(500);
+      });
+
+      $('header .menu li a').click(function(event) {
+        if ($(window).width() <= 767 ) {
+          $('.burguer').click();
+        }
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 94
+                    }, 1000, function() {
+                    var $target = $(target);
+                    $target.focus();
+                    if ($target.is(":focus")) { 
+                        return false;
+                    } else {
+                    $target.attr('tabindex','-1'); 
+                    $target.focus(); 
+                    };
+                });
+            }
+        }
+    });
   
   });
   </script>
