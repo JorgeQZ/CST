@@ -46,23 +46,23 @@
           <h2>Nuestros servicios han evolucionado
             para adecuarse a las necesidades modernas.
           </h2>
-          <a href="#" target="_blank">Ver más</a>
+          <a href="#Somos">Ver más</a>
         </div>
         <div class="cont-slide">
           <h2>Nuestros servicios han evolucionado
             para adecuarse a las necesidades modernas.
           </h2>
-          <a href="#" target="_blank">Ver más</a>
+          <a href="#Somos">Ver más</a>
         </div>
         <div class="cont-slide">
           <h2>Nuestros servicios han evolucionado
             para adecuarse a las necesidades modernas.
           </h2>
-          <a href="#" target="_blank">Ver más</a>
+          <a href="#Somos">Ver más</a>
         </div>
       </div>
     </div>
-    <div class="contenedor-somos">
+    <div id="Somos" class="contenedor-somos">
       <div class="cont-somos container">
         <div class="cont-info">
           <h2>
@@ -297,6 +297,7 @@
           <div class="contenedor-item">
             <div class="cont-imagen">
               <img src="img/desarrollosw.png" alt="">
+              <img class="i" src="img/desarrollosw-txt.png" alt="">
             </div>
             <div class="cont-pregunta">
               <p>
@@ -320,6 +321,7 @@
           <div class="contenedor-item">
             <div class="cont-imagen">
               <img src="img/consultoria.png" alt="">
+              <img class="i" src="img/consultoria-txt.png" alt="">
             </div>
             <div class="cont-pregunta">
               <p>
@@ -346,6 +348,7 @@
           <div class="contenedor-item">
             <div class="cont-imagen">
               <img src="img/pruebassoft.png" alt="">
+              <img class="i sp" src="img/pruebassoft-txt.png" alt="">
             </div>
             <div class="cont-pregunta">
               <p>
@@ -373,6 +376,7 @@
           <div class="contenedor-item">
             <div class="cont-imagen">
               <img src="img/headhunter.png" alt="">
+              <img class="i" src="img/headhunter-txt.png" alt="">
             </div>
             <div class="cont-pregunta">
               <p>
@@ -604,6 +608,33 @@
           event.preventDefault();
           $('html, body').animate({
             scrollTop: target.offset().top - 94
+          }, 1000, function () {
+            var $target = $(target);
+            $target.focus();
+            if ($target.is(":focus")) {
+              return false;
+            } else {
+              $target.attr('tabindex', '-1');
+              $target.focus();
+            };
+          });
+        }
+      }
+    });
+
+    $('.contenedor-general-biseccion .contenedor-principal .contenedor-slider .cont-slide a').click(function (event) {
+      if ($(window).width() <= 767) {
+        var a = 94;
+      }else{
+        var a = 194;
+      }
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top - a
           }, 1000, function () {
             var $target = $(target);
             $target.focus();

@@ -535,6 +535,15 @@ html, body {
                                 background-image: url(../img/icon-email.png);
                             }
                         }
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            transition: all .3s;
+    
+                            &:hover {
+                                opacity: .5;
+                            }
+                        }
                     }
                 }
             }
